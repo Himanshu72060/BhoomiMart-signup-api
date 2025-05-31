@@ -45,7 +45,7 @@ router.post('/verify-otp', async (req, res) => {
 /**
  * GET /users
  */
-router.get('/user', async (req, res) => {
+router.get('/users', async (req, res) => {
     const users = await User.find();
     res.json(users);
 });
